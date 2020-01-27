@@ -1,4 +1,4 @@
-var job = null ;
+
 const phantom = require('phantom'); // import module 
 
 //async解决回调问题,es7的内容
@@ -37,7 +37,7 @@ async function earthquake2 () {
 };
 
 var schedule = require('node-schedule');
- 
+var job = null ;
 function scheduleCronstyle(){
 
     job = schedule.scheduleJob('*/10 * * * * *', earthquake2 );
