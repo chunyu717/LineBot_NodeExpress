@@ -60,20 +60,19 @@ const bot = linebot({
 });
 
 app.post('/',  function (req, res) {
-  console.log( 'req = ' +  req )
-  console.log( 'req.body = ' +  req.body )
+  // console.log( 'req.body = ' +  req.body )
   console.log( 'req.bodyJSON.stringify = ' +  JSON.stringify( req.body ) )
-
   
   bot.parse(req.body);
   return res.json({});
 });
 
 bot.on('message', function (event) {
-  console.log( 'event = ' +  event )
+  // console.log( 'event = ' +  event )
+  console.log(event)
   var replyMsg = `Hello you just type :${event.message.text}`;
   event.reply(replyMsg).then(function (data) {
-    console.log(event)
+    //console.log(event)
     console.log('Success', data);
   }).catch(function (error) {
     console.log('Error', error);
