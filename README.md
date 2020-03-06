@@ -1,7 +1,14 @@
-# Regist line developers  Messaging api Service and create your channel then you will get 
+# Regist line developers  Messaging api Service and create your channel then you will get info below,  write it into config.js
 - CHANNEL_ID
 - CHANNEL_SECRET
 - CHANNEL_ACCESS_TOKEN
+## @config.js
+    var config = {
+        CHANNEL_ID
+        CHANNEL_SECRET
+        CHANNEL_ACCESS_TOKEN
+    };
+    module.exports = config;
 
 # if you don't have ssl. you can use "ngrok".  
 1. run gnrok you will get a temporarily https url 

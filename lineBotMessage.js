@@ -1,5 +1,4 @@
 const config = require('./config');
-const jwt = require('jsonwebtoken')
 const express = require('express')
 const app = express()
 app.set('secret', config.secret)
